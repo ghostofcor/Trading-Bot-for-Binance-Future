@@ -14,6 +14,10 @@ Technical-analysis–driven crypto trading bot for **Binance Futures**.
 
 ## Quick Start
 ```bash
+pip install -r requirements.txt
+```
+
+```bash
 python LiveTrading.py
 ```
 
