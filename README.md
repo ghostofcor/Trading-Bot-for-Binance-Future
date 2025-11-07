@@ -14,7 +14,7 @@ Technical-analysis–driven crypto trading bot for **Binance Futures**.
 
 ## Quick Start
 ```bash
-python3 LiveTrading.py
+python LiveTrading.py
 ```
 
 > **Risk notice:** Use strategies at your own risk. Futures are highly leveraged; always apply strict risk management and use stop losses.
